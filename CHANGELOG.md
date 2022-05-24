@@ -99,6 +99,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fallback to text lexer when no lexer guessed https://github.com/Textualize/rich/pull/2133
 - Fixed issue with decoding ANSI reset https://github.com/Textualize/rich/issues/2112
 
+### Added
+
+- Allow the default values for `Console` prameters `force_jupyter`, `force_terminal` & `force_interactive` to be set using environment variables
+
 ## [12.0.1] - 2022-03-22
 
 ### Changed
