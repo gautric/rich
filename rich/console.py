@@ -659,9 +659,6 @@ class Console:
             width = width or 93
             height = height or 100
 
-        self.soft_wrap = soft_wrap
-        self._width = width
-        self._height = height
         self.tab_size = tab_size
         self.record = record
         self._markup = markup
@@ -673,6 +670,7 @@ class Console:
             if legacy_windows is None
             else legacy_windows
         )
+
         if width is None:
             columns = self._environ.get("COLUMNS")
             if columns is not None and columns.isdigit():
